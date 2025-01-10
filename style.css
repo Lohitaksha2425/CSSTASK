@@ -1,18 +1,21 @@
 .square {
   height: 100px;
   width: 100px;
-  background-color: red;
+  background-color: var(--bg, red);
+  display: inline-block;
 }
 .circle {
   height: 100px;
   width: 100px;
   border-radius: 50px;
-  background-color: blue;
+  background-color: var(--bg, blue);
+  display: inline-block;
 }
 .rectangle {
-  width: 200px;
+  width: var(--w, 200px);
   height: 100px;
-  background-color: yellow;
+  background-color: var(--bg, yellow);
+  display: inline-block;
 }
 .square_outline {
   height: 100px;
@@ -72,4 +75,50 @@
   border-radius: 20px;
   border: 0;
   box-shadow: 0px 0px 2px lightgrey;
+}
+.eqtriangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid brown;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.lefttriangle {
+  width: 0;
+  height: 0;
+  border-left: 100px solid brown;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  display: inline-block;
+}
+.rightangletriangle {
+  width: 0;
+  height: 0;
+  border-right: 50px solid brown;
+  border-bottom: 50px solid brown;
+  border-left: 50px solid transparent;
+  border-top: 50px solid transparent;
+  display: inline-block;
+}
+.quad {
+  height: 0;
+  width: 70px;
+  border-bottom: 100px solid violet;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  display: inline-block;
+}
+.understanding {
+  width: 100px;
+  height: 50px;
+  border-left: 20px solid red;
+  border-right: 20px solid yellow;
+  border-bottom: 20px solid brown;
+  border-top: 20px solid green;
+  display: inline-block;
+}
+.box {
+  font-size: 50px;
 }
