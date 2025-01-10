@@ -14,3 +14,19 @@
   height: 100px;
   background-color: yellow;
 }
+.square_outline {
+  height: 100px;
+  width: 100px;
+  border: 2px solid red;
+}
+.circle_outline {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  border: 10px solid blue;
+}
+.rectangle_outline {
+  height: 100px;
+  width: 200px;
+  border: 2px solid yellow;
+}
